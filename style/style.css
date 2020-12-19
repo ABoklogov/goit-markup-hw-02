@@ -1,0 +1,180 @@
+/* цвет вторичного текста #212121;*/
+/* цвет основного текста #757575; */
+/* цвет акцент #2196F3; */
+/* Черный #000000 */
+/* Белый #FFFFFF; */
+/* контакты в подвале rgba(255, 255, 255, 0.6); */
+/* основной цвет фона #E5E5E5; */
+/* вторичный цвет фона #F5F4FA;*/
+/* цвет фона подвала и банера #2F303A; */
+:root {
+  --hover-color: #2196f3;
+  --text-color: #757575;
+  --main-background-color: #e5e5e5;
+  --logo-color: #000000;
+  --title-color: #212121;
+  --color-white: #ffffff;
+  --banner-background-color: #2f303a;
+  --commands-background-color: #f5f4fa;
+  --footer-contacts-color: rgba(255, 255, 255, 0.6);
+}
+/* -------------------------COMPONENTS------------------------- */
+body {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  color: var(--text-color);
+  background-color: var(--main-background-color);
+}
+.list-no-style {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+/* -------------------------/COMPONENTS------------------------- */
+
+/* -------------------------HEADER------------------------------ */
+/* ------site logo------ */
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-weight: bold;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--logo-color);
+}
+.logo span {
+  color: var(--hover-color);
+}
+
+/* ------site nav------*/
+.site-nav .link {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--title-color);
+}
+.site-nav .link:hover,
+.site-nav .link:active,
+.site-nav .link:focus {
+  color: var(--hover-color);
+}
+
+/* -----style contacts----- */
+.contacts-nav a {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--text-color);
+}
+.contacts-nav a:hover,
+.contacts-nav a:active,
+.contacts-nav a:focus {
+  color: var(--hover-color);
+}
+/* -------------------------/HEADER------------------------------ */
+
+/* -----banner----- */
+.banner {
+  background-color: var(--banner-background-color);
+}
+.banner-title {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--color-white);
+}
+.banner-btn {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--color-white);
+  background-color: var(--hover-color);
+}
+
+/* -----advantages (преимущества)----- */
+.advantages h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: var(--title-color);
+}
+.advantages p {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+
+/* -----lessons (чем занимаемся)----- */
+.lessons-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+
+/* -----commands (команда)----- */
+.comands {
+  background-color: --commands-background-color;
+}
+.comands-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.comands h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+}
+.comands p {
+  font-size: 16px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+}
+
+/* ----------------------------FOOTER---------------------------- */
+.footer {
+  background-color: var(--banner-background-color);
+}
+.logo-white {
+  color: var(--color-white);
+}
+.address {
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--color-white);
+}
+.footer-contacts a {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--footer-contacts-color);
+}
+.footer-contacts a:hover,
+.footer-contacts a:focus,
+.footer-contacts a:visited {
+  color: var(--hover-color);
+  /* ----------------------------FOOTER--------------------------- */
+}
