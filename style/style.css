@@ -23,6 +23,9 @@ body {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
   color: var(--text-color);
   background-color: var(--main-background-color);
 }
@@ -50,26 +53,32 @@ a {
 
 /* ------site nav------*/
 .site-nav .link {
+  color: var(--title-color);
+}
+
+.site-nav .link,
+.contacts-nav a {
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-  color: var(--title-color);
 }
+
 .site-nav .link:hover,
 .site-nav .link:active,
 .site-nav .link:focus {
   color: var(--hover-color);
 }
 
+.site-nav .link-visited:visited {
+  color: var(--hover-color);
+}
+
 /* -----style contacts----- */
 .contacts-nav a {
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 1.14;
-  letter-spacing: 0.02em;
   color: var(--text-color);
 }
+
 .contacts-nav a:hover,
 .contacts-nav a:active,
 .contacts-nav a:focus {
@@ -77,6 +86,7 @@ a {
 }
 /* -------------------------/HEADER------------------------------ */
 
+/* -------------------------STUDIO------------------------------- */
 /* -----banner----- */
 .banner {
   background-color: var(--banner-background-color);
@@ -110,9 +120,6 @@ a {
   color: var(--title-color);
 }
 .advantages p {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--text-color);
 }
 
@@ -128,7 +135,7 @@ a {
 
 /* -----commands (команда)----- */
 .comands {
-  background-color: --commands-background-color;
+  background-color: var(--commands-background-color);
 }
 .comands-title {
   font-weight: 700;
@@ -150,26 +157,59 @@ a {
   line-height: 1.19;
   letter-spacing: 0.03em;
 }
+/* -------------------------/STUDIO------------------------------- */
+
+/* ------------------------PORTFOLIO------------------------------ */
+/* ---------portfolio button--------- */
+.portfolio .portfolio-btn {
+  font-family: 'Roboto', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  letter-spacing: 0.03em;
+  color: var(--title-color);
+  background-color: var(--commands-background-color);
+}
+.portfolio .portfolio-btn:hover,
+.portfolio .portfolio-btn:active,
+.portfolio .portfolio-btn:focus {
+  background-color: var(--hover-color);
+  color: var(--color-white);
+}
+
+/* ---------portfolio list ---------*/
+.portfolio .portfolio-list-title {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--title-color);
+}
+.portfolio .portfolio-list-text {
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.03em;
+  color: var(--text-color);
+}
+/* ------------------------/PORTFOLIO------------------------------ */
 
 /* ----------------------------FOOTER---------------------------- */
 .footer {
   background-color: var(--banner-background-color);
 }
-.logo-white {
-  color: var(--color-white);
-}
+
+.logo-white,
 .address {
-  font-family: Roboto;
-  font-style: normal;
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--color-white);
 }
+
+.address {
+  font-style: normal;
+  color: var(--color-white);
+}
+
 .footer-contacts a {
-  font-size: 14px;
-  line-height: 1.71;
-  letter-spacing: 0.03em;
   color: var(--footer-contacts-color);
 }
 .footer-contacts a:hover,
