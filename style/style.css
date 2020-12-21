@@ -101,7 +101,9 @@ a {
   text-transform: uppercase;
   color: var(--color-white);
 }
+
 .banner-btn {
+  font-family: var(--main-family);
   font-weight: 700;
   font-size: 16px;
   line-height: 1.88;
